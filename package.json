@@ -1,0 +1,23 @@
+{
+  "name":        "hubot-aim",
+  "version":     "0.0.1",
+  "author":      "Shaun Dubuque <shaun.dubuque@gmail.com>",
+  "keywords":    "github hubot aim adapter",
+  "description": "AIM adapter for hubot",
+  "licenses":     [{
+    "type":       "MIT",
+    "url":        ""
+  }],
+  "repository" : {
+    "type" : "git",
+    "url" : ""
+  },
+  "dependencies": {
+	"oscar": "0.2.0"
+  },
+  "devDependencies": {
+    "coffee-script": "1.1.3"
+  },
+  "main": "./src/aim",
+  "engine": "node > 0.6.0 < 0.7.0"
+}

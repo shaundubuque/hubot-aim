@@ -1,0 +1,28 @@
+- More ICQ testing and incorporation of ICQ-specific features
+
+- Pay attention to rate warnings and limits -- automatically do this at the _send() level and queue up commands before we hit
+  the limit and SNACs start dropping, or let the user handle throttling by emitting rate-related events?
+
+- Secure connection support
+
+- Automatically use a secure connection (to slogin.oscar.aol.com for AOL) if options.connection.host
+  is one of the defaults (login.oscar.aol.com for AOL).
+  Port 5190 or 443 can be used for secure connections. Also, there is an alternate non-secure address for AOL: login.messaging.aol.com
+
+- If requesting a new service and our main connection is SSL, add empty TLV 0x8C to the service request.
+  Similarly, if the requested service redirect response (0x05) contains TLV 0x8E, use SSL if val > 0, else no SSL
+
+- Queue any requests for paused services and replay them after migration is complete or a resume response is sent by the server
+  OR emit 'paused' and 'resume' events?
+
+- Handle server-initiated BOS migrations
+
+- Actually reply every x hours (given by the server-initiated USAGE_STATS SNAC) with service 0x0B subtype 0x03
+
+- File transfer support
+
+- DirectIM support
+
+- Set up an interval to periodically clean out any answered requests or requests that have gone unanswered for some
+  fixed length of time (will require tagging each request with a (UNIX) timestamp). Although, calling delete can send
+  V8 into a slow case, maybe we should instead just set anything not already undefined to undefined?
