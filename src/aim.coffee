@@ -46,7 +46,7 @@ class Aim extends Adapter
       tmp = text.replace(/<(?:.|\n)*?>/gm, '')
       hubot_msg = tmp.replace(/\([^()]*\)/, '')
       hubot_msg_trimmed = hubot_msg.replace(/^[ \t]+/, '')
-      console.log 'received IM from ' + sender.name + 'on ' + time + '::: ' + hubot_msg_trimmed
+      console.log 'received IM from ' + sender.name + ' on ' + time + '::: ' + hubot_msg_trimmed
       self.receive new TextMessage(sender.name, hubot_msg_trimmed)
 
     @aim = aim
