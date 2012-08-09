@@ -45,7 +45,11 @@ class Aim extends Adapter
     aim.on "im", (text, sender, flags, time) ->
       tmp = text.replace(/<(?:.|\n)*?>/gm, '')
       author = {}
-      aname = tmp.match(/\([^()]*\)/)[0]
+      aname = tmp.match(/\([^()]*\)/)
+      if (aname)
+        aname = aname[0]
+      else
+        aname = sender.name
       aname = aname.replace('(', '')
       aname = aname.replace(')', '')
       hubot_msg = tmp.replace(/\([^()]*\)/, '')
