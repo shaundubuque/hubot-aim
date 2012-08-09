@@ -1,7 +1,7 @@
 {
   "name":        "hubot-aim",
-  "version":     "0.0.1",
-  "author":      "Shaun Dubuque <shaun.dubuque@gmail.com>",
+  "version":     "0.0.2",
+  "author":      "Shaun Dubuque <shaun.dubuque@thirteen23.com>",
   "keywords":    "github hubot aim adapter",
   "description": "AIM adapter for hubot",
   "licenses":     [{

@@ -8,7 +8,7 @@ class Aim extends Adapter
   send: (user, strings...) ->
     for str in strings
       console.log str
-      @aim.sendIM user, str
+      @aim.sendIM user.reply_to, str
 
   reply: (user, strings...) ->
     for str in strings
@@ -44,10 +44,19 @@ class Aim extends Adapter
 
     aim.on "im", (text, sender, flags, time) ->
       tmp = text.replace(/<(?:.|\n)*?>/gm, '')
+      author = {}
+      aname = tmp.match(/\([^()]*\)/)[0]
+      aname = aname.replace('(', '')
+      aname = aname.replace(')', '')
       hubot_msg = tmp.replace(/\([^()]*\)/, '')
       hubot_msg_trimmed = hubot_msg.replace(/^[ \t]+/, '')
-      console.log 'received IM from ' + sender.name + 'on ' + time + '::: ' + hubot_msg_trimmed
-      self.receive new TextMessage(sender.name, hubot_msg_trimmed)
+      if (aname)
+        name = aname.split("@")[0]
+        author = self.userForId(aname, name)
+      author.reply_to = sender.name  
+      console.log 'sender:' + author.reply_to
+      console.log 'received IM from ' + author.name + ' on ' + time + '::: ' + hubot_msg_trimmed
+      self.receive new TextMessage(author, hubot_msg_trimmed)
 
     @aim = aim
     self.emit "connected"
