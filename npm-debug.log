@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.1.45
+3 info using node@v0.8.4
+4 verbose config file /Users/Voltron/.npmrc
+5 verbose config file /usr/local/etc/npmrc
+6 verbose config file /usr/local/lib/node_modules/npm/npmrc
+7 verbose publish [ '.' ]
+8 verbose read json /Users/Voltron/Documents/Development/aimbot/package.json
+9 verbose cache add [ '.', null ]
+10 silly cache add name=undefined spec="." args=[".",null]
+11 verbose parsed url { pathname: '.', path: '.', href: '.' }
+12 silly lockFile 3a52ce78- .
+13 verbose lock . /Users/Voltron/.npm/3a52ce78-.lock
+14 verbose read json package.json
+15 verbose tar pack [ '/var/folders/2n/v4rq_z6n5fz3mw97zt1n2nqw0000gn/T/npm-65449/1344649302825-0.33794207009486854/tmp.tgz',
+15 verbose tar pack   '.' ]
+16 verbose tarball /var/folders/2n/v4rq_z6n5fz3mw97zt1n2nqw0000gn/T/npm-65449/1344649302825-0.33794207009486854/tmp.tgz
+17 verbose folder .
+18 info prepublish hubot-aim@0.0.3
+19 silly lockFile fb71787f-2825-0-33794207009486854-tmp-tgz /var/folders/2n/v4rq_z6n5fz3mw97zt1n2nqw0000gn/T/npm-65449/1344649302825-0.33794207009486854/tmp.tgz
+20 verbose lock /var/folders/2n/v4rq_z6n5fz3mw97zt1n2nqw0000gn/T/npm-65449/1344649302825-0.33794207009486854/tmp.tgz /Users/Voltron/.npm/fb71787f-2825-0-33794207009486854-tmp-tgz.lock
+21 silly lockFile fb71787f-2825-0-33794207009486854-tmp-tgz /var/folders/2n/v4rq_z6n5fz3mw97zt1n2nqw0000gn/T/npm-65449/1344649302825-0.33794207009486854/tmp.tgz
+22 verbose tar unpack /var/folders/2n/v4rq_z6n5fz3mw97zt1n2nqw0000gn/T/npm-65449/1344649302825-0.33794207009486854/tmp.tgz
+23 silly lockFile b1d89b2b-2825-0-33794207009486854-package /var/folders/2n/v4rq_z6n5fz3mw97zt1n2nqw0000gn/T/npm-65449/1344649302825-0.33794207009486854/package
+24 verbose lock /var/folders/2n/v4rq_z6n5fz3mw97zt1n2nqw0000gn/T/npm-65449/1344649302825-0.33794207009486854/package /Users/Voltron/.npm/b1d89b2b-2825-0-33794207009486854-package.lock
+25 silly gunzTarPerm modes [ '755', '644' ]
+26 silly gunzTarPerm extractEntry package.json
+27 silly gunzTarPerm extractEntry .npmignore
+28 silly gunzTarPerm extractEntry README.md
+29 silly gunzTarPerm extractEntry src/aim.coffee
+30 verbose read json /var/folders/2n/v4rq_z6n5fz3mw97zt1n2nqw0000gn/T/npm-65449/1344649302825-0.33794207009486854/package/package.json
+31 silly lockFile b1d89b2b-2825-0-33794207009486854-package /var/folders/2n/v4rq_z6n5fz3mw97zt1n2nqw0000gn/T/npm-65449/1344649302825-0.33794207009486854/package
+32 verbose from cache /var/folders/2n/v4rq_z6n5fz3mw97zt1n2nqw0000gn/T/npm-65449/1344649302825-0.33794207009486854/package/package.json
+33 verbose tar pack [ '/Users/Voltron/.npm/hubot-aim/0.0.3/package.tgz',
+33 verbose tar pack   '/var/folders/2n/v4rq_z6n5fz3mw97zt1n2nqw0000gn/T/npm-65449/1344649302825-0.33794207009486854/package' ]
+34 verbose tarball /Users/Voltron/.npm/hubot-aim/0.0.3/package.tgz
+35 verbose folder /var/folders/2n/v4rq_z6n5fz3mw97zt1n2nqw0000gn/T/npm-65449/1344649302825-0.33794207009486854/package
+36 silly lockFile 1e1faaf3--npm-hubot-aim-0-0-3-package-tgz /Users/Voltron/.npm/hubot-aim/0.0.3/package.tgz
+37 verbose lock /Users/Voltron/.npm/hubot-aim/0.0.3/package.tgz /Users/Voltron/.npm/1e1faaf3--npm-hubot-aim-0-0-3-package-tgz.lock
+38 silly lockFile 1e1faaf3--npm-hubot-aim-0-0-3-package-tgz /Users/Voltron/.npm/hubot-aim/0.0.3/package.tgz
+39 silly lockFile 1a5f6934-tron-npm-hubot-aim-0-0-3-package /Users/Voltron/.npm/hubot-aim/0.0.3/package
+40 verbose lock /Users/Voltron/.npm/hubot-aim/0.0.3/package /Users/Voltron/.npm/1a5f6934-tron-npm-hubot-aim-0-0-3-package.lock
+41 silly lockFile 1a5f6934-tron-npm-hubot-aim-0-0-3-package /Users/Voltron/.npm/hubot-aim/0.0.3/package
+42 verbose tar unpack /Users/Voltron/.npm/hubot-aim/0.0.3/package.tgz
+43 silly lockFile 1a5f6934-tron-npm-hubot-aim-0-0-3-package /Users/Voltron/.npm/hubot-aim/0.0.3/package
+44 verbose lock /Users/Voltron/.npm/hubot-aim/0.0.3/package /Users/Voltron/.npm/1a5f6934-tron-npm-hubot-aim-0-0-3-package.lock
+45 silly gunzTarPerm modes [ '755', '644' ]
+46 silly gunzTarPerm extractEntry package.json
+47 silly gunzTarPerm extractEntry .npmignore
+48 silly gunzTarPerm extractEntry README.md
+49 silly gunzTarPerm extractEntry src/aim.coffee
+50 verbose read json /Users/Voltron/.npm/hubot-aim/0.0.3/package/package.json
+51 silly lockFile 1a5f6934-tron-npm-hubot-aim-0-0-3-package /Users/Voltron/.npm/hubot-aim/0.0.3/package
+52 silly shasum updated bytes 1705
+53 info shasum 0fc866ac3bd1227fc9a3d9fc739d770751acc9f7
+53 info shasum /Users/Voltron/.npm/hubot-aim/0.0.3/package.tgz
+54 verbose from cache /Users/Voltron/.npm/hubot-aim/0.0.3/package/package.json
+55 verbose chmod /Users/Voltron/.npm/hubot-aim/0.0.3/package.tgz 644
+56 verbose chown /Users/Voltron/.npm/hubot-aim/0.0.3/package.tgz [ 501, 20 ]
+57 silly lockFile 3a52ce78- .
+58 silly publish { name: 'hubot-aim',
+58 silly publish   version: '0.0.3',
+58 silly publish   author: { name: 'Shaun Dubuque', email: 'shaun.dubuque@thirteen23.com' },
+58 silly publish   keywords: 'github hubot aim adapter',
+58 silly publish   description: 'AIM adapter for hubot',
+58 silly publish   licenses: [ { type: 'MIT', url: '' } ],
+58 silly publish   repository: { type: 'git', url: '' },
+58 silly publish   dependencies: { oscar: '0.2.0' },
+58 silly publish   devDependencies: { 'coffee-script': '1.1.3' },
+58 silly publish   main: './src/aim',
+58 silly publish   engine: 'node > 0.6.0 < 0.7.0',
+58 silly publish   readme: ' \n',
+58 silly publish   _id: 'hubot-aim@0.0.3',
+58 silly publish   dist: { shasum: '0fc866ac3bd1227fc9a3d9fc739d770751acc9f7' } }
+59 verbose url raw hubot-aim
+60 verbose url resolving [ 'https://registry.npmjs.org/', './hubot-aim' ]
+61 verbose url resolved https://registry.npmjs.org/hubot-aim
+62 info retry registry request attempt 1 at 20:41:42
+63 http PUT https://registry.npmjs.org/hubot-aim
+64 http 409 https://registry.npmjs.org/hubot-aim
+65 verbose url raw hubot-aim
+66 verbose url resolving [ 'https://registry.npmjs.org/', './hubot-aim' ]
+67 verbose url resolved https://registry.npmjs.org/hubot-aim
+68 info retry registry request attempt 1 at 20:41:43
+69 http GET https://registry.npmjs.org/hubot-aim
+70 http 200 https://registry.npmjs.org/hubot-aim
+71 error publish fail Cannot publish over existing version.
+71 error publish fail Bump the 'version' field, set the --force flag, or
+71 error publish fail     npm unpublish 'hubot-aim@0.0.3'
+71 error publish fail and try again
+72 error System Darwin 11.4.2
+73 error command "node" "/usr/local/bin/npm" "publish"
+74 error cwd /Users/Voltron/Documents/Development/aimbot
+75 error node -v v0.8.4
+76 error npm -v 1.1.45
+77 error code EPUBLISHCONFLICT
+78 verbose exit [ 1, true ]

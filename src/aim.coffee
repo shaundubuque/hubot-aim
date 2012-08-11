@@ -18,7 +18,7 @@ class Aim extends Adapter
   run: ->
     self = @
     @options =
-      email:      process.env.HUBOT_AIM_EMAIL
+      email:    process.env.HUBOT_AIM_EMAIL
       password: process.env.HUBOT_AIM_PASSWORD
       name:     process.env.HUBOT_AIM_NAME or "#{self.name} Bot"
       rooms:    process.env.HUBOT_AIM_ROOMS or "@All"

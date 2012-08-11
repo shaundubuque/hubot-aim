@@ -1,16 +1,16 @@
 {
   "name":        "hubot-aim",
-  "version":     "0.0.2",
+  "version":     "0.0.4",
   "author":      "Shaun Dubuque <shaun.dubuque@thirteen23.com>",
   "keywords":    "github hubot aim adapter",
   "description": "AIM adapter for hubot",
   "licenses":     [{
     "type":       "MIT",
-    "url":        ""
+    "url":        "http://opensource.org/licenses/mit-license.php/"
   }],
   "repository" : {
     "type" : "git",
-    "url" : ""
+    "url" : "https://github.com/shaundubuque/hubot-aim"
   },
   "dependencies": {
 	"oscar": "0.2.0"
