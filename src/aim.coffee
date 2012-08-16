@@ -7,10 +7,11 @@ oscar = require 'oscar'
 class Aim extends Adapter
   send: (user, strings...) ->
     for str in strings
-      console.log str
-      # wrap in html tags and convert newlines to <br> tags
-      str.replace('\n', '<br>')
-      str = '<html><body>' + str + '</body></html>'
+      str = unescape(encodeURIComponent(str))
+      str = str.replace(/</g, '&lt;')
+      str = str.replace(/>/g, '&gt;')
+      str = str.replace(/(\r\n|\n|\r)/g,'<br>');
+      str = str.replace(/\s/g, '&nbsp;')
       @aim.sendIM user.reply_to, str
 
   reply: (user, strings...) ->
