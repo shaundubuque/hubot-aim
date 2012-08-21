@@ -16,8 +16,8 @@ You will need to set some environment variables to use this adapter.
 
 ### Heroku
 
-    % heroku config:add HUBOT_IRC_NICK="hubot"
-    % heroku config:add HUBOT_IRC_ROOMS="#hubot,#hubot-irc"
+    % heroku config:add HUBOT_AIM_EMAIL="<email_address>"
+    % heroku config:add HUBOT_AIM_PASSWORD="<password>"
     
 ## Contribute
 
