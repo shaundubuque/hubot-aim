@@ -12,6 +12,7 @@ class Aim extends Adapter
       str = str.replace(/>/g, '&gt;')
       str = str.replace(/(\r\n|\n|\r)/g,'<br>');
       str = str.replace(/\s/g, '&nbsp;')
+      console.log str
       @aim.sendIM user.reply_to, str
 
   reply: (user, strings...) ->
