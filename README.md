@@ -1,5 +1,5 @@
  
-# Hubot IRC Adapter
+# Hubot AIM Adapter
 
 ## Description
 
